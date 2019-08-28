@@ -39,12 +39,38 @@ const AboutPage = props => (
               </em>{' '}
               profession.
             </p>
-            <h1>Skills: </h1>
+
+            <h2>
+              <strong>
+                <em>Skills: </em>
+              </strong>
+            </h2>
+
             <ul>
               <li>React</li>
               <li>Bootstrap</li>
               <li>ES6</li>
               <li>Git</li>
+            </ul>
+            <h2>
+              <strong>
+                <em>Hobbys: </em>
+              </strong>
+            </h2>
+            <ul>
+              <li>Basketball</li>
+              <li>Guitar</li>
+              <li>Sing</li>
+            </ul>
+            <h2>
+              <strong>
+                <em>Blog address: </em>
+              </strong>
+            </h2>
+            <ul>
+              <li>
+                <a href="https://dev-chunmu.netlify.com/">chunmu.netlify.com</a>
+              </li>
             </ul>
           </Content>
         </Col>

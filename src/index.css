@@ -119,7 +119,7 @@ body {
 
 @media screen and (min-width: 900px) {
   .my-info {
-    margin: auto;
+    margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;

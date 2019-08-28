@@ -20,7 +20,7 @@ const ContactPage = props => {
           </thead>
           <tbody>
             <tr>
-              <td>Name</td>
+              <td></td>
               <td>Chun mu</td>
               <td>Tiao</td>
               <td>Chengdu</td>
@@ -54,8 +54,14 @@ const ContactPage = props => {
           <tbody>
             <tr>
               <td></td>
-              <td>https://github.com/kribeau</td>
-              <td>https://dev-chunmu.netlify.com</td>
+              <td>
+                <a href="https://github.com/kribeau">github.com/kribeau</a>
+              </td>
+              <td>
+                <a href="https://dev-chunmu.netlify.com">
+                  dev-chunmu.netlify.com
+                </a>
+              </td>
             </tr>
           </tbody>
         </Table>
