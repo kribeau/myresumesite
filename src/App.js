@@ -1,26 +1,72 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
+  const [name] = useState('Chunmu Tiao')
+
+  const [home] = useState({
+    title: 'Be Creative',
+    subTitle: 'Projects that make a difference'
+  })
+  const [about] = useState({
+    title: 'About Me'
+  })
+  const [contact] = useState({
+    title: "Let's Talk"
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <Container className="p-0" fluid={true}>
+        <Navbar
+          className="border-bottom  bd-navbar font-1"
+          bg="transparent"
+          expand="lg"
+          style={{ index: 999 }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <Navbar.Brand>
+            {name}&nbsp;
+            <span role="img" aria-label="">
+              👨‍💻
+            </span>
+          </Navbar.Brand>
+          <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+          <Navbar.Collapse id="navbar-toggle">
+            <Nav className="ml-auto">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <Route
+          path="/"
+          exact
+          render={() => (
+            <HomePage title={home.title} subTitle={home.subTitle} />
+          )}
+        ></Route>
+        <Route path="/about" render={() => <AboutPage title={about.title} />} />
+        <Route
+          path="/contact"
+          render={() => <ContactPage title={contact.title} />}
+        />
+        <Footer name={name} />
+      </Container>
+    </Router>
+  )
 }
 
-export default App;
+export default App

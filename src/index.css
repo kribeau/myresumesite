@@ -1,13 +1,113 @@
-body {
+@import url('https://fonts.font.im/css?family=Kaushan+Script');
+@import url('https://fonts.font.im/css?family=Hanalei+Fill');
+@import url('https://fonts.font.im/css?family=Poiret+One');
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  font-family: 'Poiret One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.g-card {
+  margin: 20px;
+}
+
+.g-card:hover {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.g-card-image {
+  animation: Card-spin infinite 8s linear;
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 45%;
+  width: 16rem;
+  height: 16rem;
+  box-shadow: 0px 0px 3px 1px #ccc;
+}
+
+.g-card-info {
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.g-card-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.g-card-sub-title {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+.bd-navbar {
+  min-height: 5rem;
+}
+
+.font-1 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.font-2 {
+  font-family: 'Hanalei Fill', cursive;
+}
+
+@keyframes Card-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
