@@ -111,3 +111,33 @@ body {
     transform: scale(1);
   }
 }
+
+.my-info {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .my-info {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+}
+
+.margin-5 {
+  margin-bottom: 300px;
+}
+
+.anim-heart:hover {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}

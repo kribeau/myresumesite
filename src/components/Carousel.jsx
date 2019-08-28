@@ -59,7 +59,7 @@ const Carousel = props => {
   }
 
   return (
-    <Container fluid={true}>
+    <Container fluid={true} style={{ marginBottom: 120 }}>
       <Row className="justify-content-around">{makeItems(items)}</Row>
     </Container>
   )

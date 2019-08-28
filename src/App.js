@@ -30,11 +30,16 @@ function App() {
           expand="lg"
           style={{ index: 999 }}
         >
-          <Navbar.Brand>
-            {name}&nbsp;
-            <span role="img" aria-label="">
-              👨‍💻
-            </span>
+          <Navbar.Brand className="anim-heart">
+            <a
+              style={{ color: '#000', textDecoration: 'none' }}
+              href="https://dev-chunmu.netlify.com"
+            >
+              {name}&nbsp;
+              <span role="img" aria-label="">
+                👨‍💻
+              </span>
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
           <Navbar.Collapse id="navbar-toggle">

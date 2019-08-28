@@ -33,7 +33,6 @@ const ContactPage = props => {
               <th>Contact</th>
               <th>Phone Call</th>
               <th>Mail box</th>
-              <th>Github</th>
             </tr>
           </thead>
           <tbody>
@@ -41,7 +40,22 @@ const ContactPage = props => {
               <td></td>
               <td>13281811736</td>
               <td>chunmu.d@outlook.com</td>
+            </tr>
+          </tbody>
+        </Table>
+        <Table className="mt-5" striped bordered hover variant="dark">
+          <thead>
+            <tr>
+              <th>social</th>
+              <th>github</th>
+              <th>blog</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
               <td>https://github.com/kribeau</td>
+              <td>https://dev-chunmu.netlify.com</td>
             </tr>
           </tbody>
         </Table>
