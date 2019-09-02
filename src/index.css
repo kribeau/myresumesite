@@ -12,8 +12,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Poiret One', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 .g-card {

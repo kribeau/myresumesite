@@ -18,11 +18,10 @@ const AboutPage = props => (
               <em>
                 <strong>Chunmu Tiao</strong>
               </em>{' '}
-              , my friends called me{' '}
               <em>
-                <strong>mumu .</strong>
+                <strong> .</strong>
               </em>
-              I'm from{' '}
+              From{' '}
               <em>
                 <strong>Guang'an</strong>
               </em>
@@ -33,11 +32,28 @@ const AboutPage = props => (
               .
             </p>
             <p>
-              I'm studying the{' '}
+              Studying the{' '}
               <em>
                 <strong>IOT(Internet of Things)</strong>
               </em>{' '}
               profession.
+            </p>
+            <p>
+              I learned about web front-end develop by chance. Front-end
+              development is the closest to the user level. It make user
+              experience from 90% to 100% even more. I like it.
+            </p>
+            <p>
+              I learned front-end develop from{' '}
+              <strong>
+                <em>Youtube</em>
+              </strong>{' '}
+              and{' '}
+              <strong>
+                <em>Medium</em>
+              </strong>
+              . Dev Ed was my favourate youtube channel. And Simo Edwin who's a
+              dude in youtube teached me more about React and Sass.
             </p>
 
             <h2>
