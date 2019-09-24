@@ -85,7 +85,9 @@ const AboutPage = props => (
             </h2>
             <ul>
               <li>
-                <a href="https://dev-chunmu.netlify.com/">chunmu.netlify.com</a>
+                <a href="https://dev-chunmu.netlify.com/">
+                  dev-chunmu.netlify.com
+                </a>
               </li>
             </ul>
           </Content>
